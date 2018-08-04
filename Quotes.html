@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<html lang="en-US">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<TITLE>Get A Quote</TITLE>
+	</head>
+	<body>
+
+	<a href="index.html"> Main Page</a>
+	<!-- Description List -->
+	<dl>
+		<dt> Did you know we're known for our Barbeque Sandwich? </dt>
+		<dd> - It's loaded with our homemade slaw and a side of sauce <dd>
+	</dl>	
+
+	<form action="" method="POST">
+		<label>
+			How Many People?
+			<input type="text" placeholder="Number of People"required>
+		</label>
+		<label>
+			Date of Your Event?
+			<input type="Date" required>
+		</label>
+		<br>
+		<label>
+			Your email address?
+			<input type="email" placeholder="What's your email address" required>
+		</label>
+		<label>
+			Phone Number?
+			<input type="Phone" placeholder="What's Your Phone Number" required>
+		</label>
+		<label>
+			Password:
+			<input name="Password" type="Password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters">
+
+		</label>
+		
+		<h2>What would you like served?</h2>
+
+		<label>
+			Sandwiches:
+			<select name="Sandwiches"> 
+				<option>BBQ</option>
+				<option>Brisket</option>
+				<option>Smoked Bologna</option>
+			</select>	
+		</label>	
+
+		<label>
+			Plates:
+			<select name="Plates"> 
+				<option>BBQ</option>
+				<option>Brisket</option>
+				<option>BBQ & Brisket Combo</option>
+				<option>Smoked Bologna</option>
+				<option>Ribs</option>
+			</select>	
+		</label>	
+
+		<label>	
+			Sides:
+			<select name="Sides"> 
+				<option>Green Beans</option>
+				<option>Mac & Cheese</option>
+				<option>Baked Beans</option>
+				<option>Side Salad</option>
+				<option>Slaw</option>
+				<option>Oven Roasted Potatoes</option>
+				<option>Brunswick Stew</option>
+			</select>	
+		</label>
+
+		<label>
+			Desserts:
+			<select name="Desserts"> 
+				<option>BBQ</option>
+				<option>Brisket</option>
+				<option>Smoked Bologna</option>
+		</select>
+		</label>
+		<br>
+		<br>
+		<label>
+			<input type="radio" name="order" value="pickup"> Pick Up
+		</label>
+		
+		<label>	
+			<input type="radio" name="order" value="deliver"> Deliver
+		</label>
+		<br>
+		<h3> Any Extras? </h3>
+		<label>
+			<input type="checkbox" name="extras"> Napkins
+		</label>
+		<label>
+			<input type="checkbox" name="extras"> Silverware
+		</label>
+		<label>
+			<input type="checkbox" name="extras"> Cups
+		</label>
+		<br>
+		<br>
+		<textarea name="additions" rows="5" cols="50"> Any additional instructions?</textarea>
+		<br>
+		<button type="submit"> Submit Quote</button>
+		</form>
+		<h4> Thanks! We'll get back to you with a quote </h4>
+	</body>
+</html>
+
